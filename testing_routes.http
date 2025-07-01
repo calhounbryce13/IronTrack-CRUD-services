@@ -1,0 +1,75 @@
+
+
+
+###
+
+POST http://127.0.0.1:3000/registration
+Content-Type: application/json
+
+{
+    "email":"calhounbryce13@gmail.com",
+    "password":"password1234"
+}
+
+###
+
+POST http://127.0.0.1:3000/login
+Content-Type: application/json
+
+{
+    "email":"calhounbryce13@gmail.com",
+    "password":"password1234"
+}
+
+
+
+###
+POST http://127.0.0.1:3000/exercises
+Cookie: connect.sid=s%3AJJhAjEPzThqwnwPYnrhO091KeZUn0Xuh.4DdQW3nqrLPzSNLTYEryXorGwQeF6zfbDQkl4JjwE9Y
+Content-Type: application/json
+
+{
+    "name": "bench press",
+    "reps": 10,
+    "weight": 250,
+    "unit": "lbs",
+    "date":"10-25-12"
+
+}
+
+
+
+
+
+###
+GET http://127.0.0.1:3000/exercises
+Cookie: connect.sid=s%3AJJhAjEPzThqwnwPYnrhO091KeZUn0Xuh.4DdQW3nqrLPzSNLTYEryXorGwQeF6zfbDQkl4JjwE9Y
+
+
+
+
+
+
+###
+GET http://127.0.0.1:3000/exercises/683b827f5d088c00d02c46be
+
+
+
+
+###
+PUT http://127.0.0.1:3000/exercises/6843bb5bf3501783f2aad409
+Content-Type: application/json
+
+{
+    "name": "Push sideways",
+    "reps": 200,
+    "weight": 23,
+    "unit": "lbs",
+    "date":"10-25-12"
+    
+}
+
+
+
+###
+DELETE http://127.0.0.1:3000/exercises/6843d6e0d1e777390c9b9a3d
